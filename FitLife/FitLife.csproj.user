@@ -6,7 +6,7 @@
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Pages\NewPage1.xaml">
+    <MauiXaml Update="Pages\weightPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
