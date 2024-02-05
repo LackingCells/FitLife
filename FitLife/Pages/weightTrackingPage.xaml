@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitLife.Pages.weightTrackingPage"
-             Title="weightTrackingPage">
+<ContentPage
+    x:Class="FitLife.Pages.weightTrackingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="weightTrackingPage">
+    <!--
+        1. Current weight i kilo, tar genomsnittet den senaste veckan
+        2. Insert daily weight
+        Vanlig insert som lägger in vikten i lokal databas
+        3. checkbox för daglig reminder
+        Standard-tid den kommer och tid efter alarm
+    -->
     <VerticalStackLayout>
-        <Label 
+        <Label
+            HorizontalOptions="Center"
             Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            VerticalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
