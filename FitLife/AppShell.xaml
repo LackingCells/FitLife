@@ -4,12 +4,22 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FitLife"
-    Shell.FlyoutBehavior="Disabled"
-    Title="FitLife">
+    xmlns:pages="clr-namespace:FitLife.Pages"
+    Title="FitLife"
+    Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <Tab Title="Reminders" Icon="reminders.png">
+            <!--  attribute to https://www.flaticon.com/free-icons/reminders  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:reminderPage}" />
+        </Tab>
+        <Tab Title="Weight" Icon="weight_scale.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/weight-scale  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:weightTrackingPage}" />
+        </Tab>
+        <Tab Title="Training" Icon="dumbbell.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/gym" title="gym icons  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:trainingPage}" />
+        </Tab>
+    </TabBar>
 </Shell>
