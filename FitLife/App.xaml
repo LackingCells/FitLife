@@ -1,14 +1,24 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FitLife"
-             x:Class="FitLife.App">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="FitLife.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FitLife">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!--  Färgpalette https://coolors.co/f8f4f9-abaf6e-e07a5f-f4b942-443742  -->
+            <Color x:Key="bgColor">#F8F4F9</Color>
+            <Color x:Key="txtColor">#443742</Color>
+            <Color x:Key="fgColor">#ABAF6E</Color>
+            <Color x:Key="accColor1">#E07A5F</Color>
+            <Color x:Key="accColor2">#F4B942</Color>
+            
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

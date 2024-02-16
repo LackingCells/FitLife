@@ -6,6 +6,12 @@
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="Pages\caloriePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\progressPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\reminderPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

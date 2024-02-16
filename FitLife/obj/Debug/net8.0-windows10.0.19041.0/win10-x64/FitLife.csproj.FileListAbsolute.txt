@@ -179,3 +179,5 @@ C:\Users\Elias\Source\Repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0
 C:\Users\Elias\Source\Repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\Elias\Source\Repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dumbbell.scale-100.png
 C:\Users\Elias\Source\Repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\weight_scale.scale-100.png
+C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graphic_progression.scale-100.png
+C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\restaurant.scale-100.png

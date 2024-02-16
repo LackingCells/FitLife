@@ -58,7 +58,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\dumbbell.png" />
+	  <None Remove="Resources\Images\graphic_progression.png" />
 	  <None Remove="Resources\Images\reminders.png" />
+	  <None Remove="Resources\Images\restaurant.png" />
 	  <None Remove="Resources\Images\weight_scale.png" />
 	</ItemGroup>
 
@@ -75,6 +77,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\caloriePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\progressPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\reminderPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

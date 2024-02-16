@@ -6,7 +6,19 @@
     xmlns:local="clr-namespace:FitLife"
     xmlns:pages="clr-namespace:FitLife.Pages"
     Title="FitLife"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.BackgroundColor="{StaticResource fgColor}"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
+    <Shell.Resources>
+        <Style TargetType="Tab">
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource fgColor}" />
+            <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource accColor1}" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource txtColor}" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource accColor1}" />
+            <Setter Property="Shell.TabBarDisabledColor" Value="{StaticResource fgColor}" />
+        </Style>
+    </Shell.Resources>
+
 
     <TabBar>
         <Tab Title="Reminders" Icon="reminders.png">
@@ -20,6 +32,14 @@
         <Tab Title="Training" Icon="dumbbell.png">
             <!--  Attribute to https://www.flaticon.com/free-icons/gym" title="gym icons  -->
             <ShellContent ContentTemplate="{DataTemplate pages:trainingPage}" />
+        </Tab>
+        <Tab Title="Progress" Icon="graphic_progression.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/chart" title="chart icons  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:progressPage}" />
+        </Tab>
+        <Tab Title="Calories" Icon="restaurant.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/restaurant  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:caloriePage}" />
         </Tab>
     </TabBar>
 </Shell>
