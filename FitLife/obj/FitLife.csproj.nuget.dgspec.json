@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\FitLife.csproj": {}
+    "C:\\Users\\Sry But GG\\source\\repos\\FitLife\\FitLife\\FitLife.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\FitLife.csproj": {
+    "C:\\Users\\Sry But GG\\source\\repos\\FitLife\\FitLife\\FitLife.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\FitLife.csproj",
+        "projectUniqueName": "C:\\Users\\Sry But GG\\source\\repos\\FitLife\\FitLife\\FitLife.csproj",
         "projectName": "FitLife",
-        "projectPath": "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\FitLife.csproj",
-        "packagesPath": "C:\\Users\\Elias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\obj\\",
+        "projectPath": "C:\\Users\\Sry But GG\\source\\repos\\FitLife\\FitLife\\FitLife.csproj",
+        "packagesPath": "C:\\Users\\Sry But GG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sry But GG\\source\\repos\\FitLife\\FitLife\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Elias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sry But GG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

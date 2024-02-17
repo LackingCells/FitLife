@@ -1,1 +1,1 @@
-C:\Users\Elias\source\repos\FitLife\FitLife\FitLife.csproj;x64
+C:\Users\Sry But GG\source\repos\FitLife\FitLife\FitLife.csproj;x64
