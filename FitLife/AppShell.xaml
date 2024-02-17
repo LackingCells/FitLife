@@ -4,12 +4,42 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FitLife"
+    xmlns:pages="clr-namespace:FitLife.Pages"
+    Title="FitLife"
+    Shell.BackgroundColor="{StaticResource fgColor}"
     Shell.FlyoutBehavior="Disabled"
-    Title="FitLife">
+    Shell.NavBarIsVisible="False">
+    <Shell.Resources>
+        <Style TargetType="Tab">
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource fgColor}" />
+            <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource accColor1}" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource txtColor}" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource accColor1}" />
+            <Setter Property="Shell.TabBarDisabledColor" Value="{StaticResource fgColor}" />
+        </Style>
+    </Shell.Resources>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
+    <TabBar>
+        <Tab Title="Reminders" Icon="reminders.png">
+            <!--  attribute to https://www.flaticon.com/free-icons/reminders  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:reminderPage}" />
+        </Tab>
+        <Tab Title="Weight" Icon="weight_scale.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/weight-scale  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:weightTrackingPage}" />
+        </Tab>
+        <Tab Title="Training" Icon="dumbbell.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/gym" title="gym icons  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:trainingPage}" />
+        </Tab>
+        <Tab Title="Progress" Icon="graphic_progression.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/chart" title="chart icons  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:progressPage}" />
+        </Tab>
+        <Tab Title="Calories" Icon="restaurant.png">
+            <!--  Attribute to https://www.flaticon.com/free-icons/restaurant  -->
+            <ShellContent ContentTemplate="{DataTemplate pages:caloriePage}" />
+        </Tab>
+    </TabBar>
 </Shell>

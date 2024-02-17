@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="FitLife.Pages.reminderPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="reminderPage">
+
+    <!--
+        1. plus-tecken som öppnar:
+        En enterable reminder del med:
+        Enter text
+        Om den ska vara baserad på väckarklockan
+        Tid efter/innan väckarklockan
+        Annars bara tid
+        Om den ska vara återkommande
+        Hur många dagar efter första den ska ringa igen
+        2. Lista med existerande reminders
+        Möjlighet att radera dem, eller pausa dem
+    -->
+
+
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
