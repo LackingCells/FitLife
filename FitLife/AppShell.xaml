@@ -41,5 +41,9 @@
             <!--  Attribute to https://www.flaticon.com/free-icons/restaurant  -->
             <ShellContent ContentTemplate="{DataTemplate pages:caloriePage}" />
         </Tab>
+        <Tab Title="Settings" Icon="gear.png">
+            <!--Attribute to https://www.flaticon.com/free-icons/gear-->
+            <ShellContent ContentTemplate="{DataTemplate pages:settingPage}"/>
+        </Tab>
     </TabBar>
 </Shell>
