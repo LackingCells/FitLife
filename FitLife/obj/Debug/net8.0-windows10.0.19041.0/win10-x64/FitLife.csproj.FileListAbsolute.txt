@@ -181,3 +181,8 @@ C:\Users\Elias\Source\Repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0
 C:\Users\Elias\Source\Repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\weight_scale.scale-100.png
 C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graphic_progression.scale-100.png
 C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\restaurant.scale-100.png
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
