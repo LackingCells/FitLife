@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SQLite;
+﻿using SQLite;
 
 namespace FitLife.Logic.DB
 {
     [Table("daily_weight")]
     public class Weight
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey, AutoIncrement, Column("id")]
         public int Id { get; set; }
-        public DateOnly Date { get; set; }
+        //[Column("date")]
+        //public DateOnly Date { get; set; }
+        [Column("weight")]
         public float DailyWeight { get; set; }
     }
 }

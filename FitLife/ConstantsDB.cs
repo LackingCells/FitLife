@@ -18,6 +18,7 @@ namespace FitLife
             // enable multi-threaded database access
             SQLite.SQLiteOpenFlags.SharedCache;
 
+        //gör om till current monday och current sunday i DateOnly format, lättare att använda
         public static int daysToMonday;
         public static int daysToSunday;
 
