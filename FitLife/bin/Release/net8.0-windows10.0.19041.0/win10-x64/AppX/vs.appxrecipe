@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Release\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-07T16:15:27.545</Modified>
+      <Modified>2024-03-07T16:20:46.168</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Release\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-07T16:14:08.512</Modified>
+      <Modified>2024-03-07T16:20:45.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Release\net8.0-windows10.0.19041.0\win10-x64\FitLife.runtimeconfig.json">
       <PackagePath>FitLife.runtimeconfig.json</PackagePath>
@@ -44,7 +44,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FitLife.exe</PackagePath>
-      <Modified>2024-03-07T16:15:25.903</Modified>
+      <Modified>2024-03-07T16:20:44.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -612,7 +612,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\FitLife.dll">
       <PackagePath>FitLife.dll</PackagePath>
-      <Modified>2024-03-07T16:15:27.448</Modified>
+      <Modified>2024-03-07T16:20:46.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.maui.controls.compatibility\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
