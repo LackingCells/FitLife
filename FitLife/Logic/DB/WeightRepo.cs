@@ -43,7 +43,8 @@ public class WeightRepo
     public async Task<float> GetWeekWeight(DateOnly today)
     {
         await Init();
-        float averageWeight;
+        System.Diagnostics.Debug.WriteLine("hej");
+        float averageWeight = 0;
         List<Weight> weekWeight;
         DateOnly monday = today.AddDays(ConstantsDB.daysToMonday);
         DateOnly sunday = today.AddDays(ConstantsDB.daysToSunday);
@@ -56,8 +57,22 @@ public class WeightRepo
             count += weekWeight[i].DailyWeight;
         }
         averageWeight = count / weekWeight.Count;
+        Console.WriteLine(averageWeight);
+        
 
         return averageWeight;
+    }
+
+    public async Task Test()
+    {
+        await Database.InsertAsync(new Weight { DailyWeight = 87, Date = new DateOnly(2024, 3, 4) });
+        await Database.InsertAsync(new Weight { DailyWeight = 85, Date = new DateOnly(2024, 3, 5) });
+        await Database.InsertAsync(new Weight { DailyWeight = 85, Date = new DateOnly(2024, 3, 6) });
+        await Database.InsertAsync(new Weight { DailyWeight = 82, Date = new DateOnly(2024, 3, 7) });
+        await Database.InsertAsync(new Weight { DailyWeight = 87, Date = new DateOnly(2024, 3, 8) });
+        await Database.InsertAsync(new Weight { DailyWeight = 86, Date = new DateOnly(2024, 3, 9) });
+        await Database.InsertAsync(new Weight { DailyWeight = 84, Date = new DateOnly(2024, 3, 10) });
+        Console.WriteLine("hej");
     }
 
 
