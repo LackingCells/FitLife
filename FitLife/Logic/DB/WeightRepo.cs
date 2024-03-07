@@ -65,6 +65,7 @@ public class WeightRepo
 
     public async Task Test()
     {
+        await Init();
         await Database.InsertAsync(new Weight { DailyWeight = 87, Date = new DateOnly(2024, 3, 4) });
         await Database.InsertAsync(new Weight { DailyWeight = 85, Date = new DateOnly(2024, 3, 5) });
         await Database.InsertAsync(new Weight { DailyWeight = 85, Date = new DateOnly(2024, 3, 6) });
