@@ -12,6 +12,6 @@ namespace FitLife.Logic.DB
     {
         [PrimaryKey]
         public DateOnly Date { get; set; }
-        public int DailyWeight { get; set; }
+        public float DailyWeight { get; set; }
     }
 }

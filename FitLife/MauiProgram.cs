@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using FitLife.Logic.DB;
+using FitLife.Pages;
+using Microsoft.Extensions.Logging;
 
 namespace FitLife
 {
@@ -14,6 +16,10 @@ namespace FitLife
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<weightTrackingPage>();
+
+            builder.Services.AddSingleton<WeightRepo>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

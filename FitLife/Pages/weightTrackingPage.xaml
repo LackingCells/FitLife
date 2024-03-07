@@ -11,50 +11,67 @@
         3. checkbox för daglig reminder
         Standard-tid den kommer och tid efter alarm
     -->
-    
-    <!--Tweaka storlekar och placement på saker för att passa mobil-->
-    <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *">
-        <Label
-            Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Grid.Row="0"
-            x:Name="currentWeight"
-            BackgroundColor="{StaticResource fgColor}"
-            HeightRequest="100"
-            HorizontalTextAlignment="Center"
-            Text="Choose a time period"
-            TextColor="{StaticResource txtColor}"
-            VerticalTextAlignment="Center" />
-        <Button 
-            Grid.Column="0"
-            Grid.Row="1"
-            Text="Last week"
-            BackgroundColor="{StaticResource fgColor}"
-            x:Name="weekWeightBtn"
-            Clicked="weekWeightBtn_Clicked"/>
-        <Button 
-            Grid.Column="1"
-            Grid.Row="1"
-            Text="Last month"
-            BackgroundColor="{StaticResource fgColor}"
-            x:Name="monthWeightBtn"
-            Clicked="monthWeightBtn_Clicked"/>
 
-        <Label Text="Enter todays weight" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalOptions="Center"/>
-        <Entry
-            Grid.Column="0"
-            Grid.Row="3"
-            x:Name="addedWeight"
-            HeightRequest="30"
-            HorizontalTextAlignment="Center"
-            BackgroundColor="{StaticResource fgColor}"
-            TextColor="{StaticResource txtColor}"
-            VerticalTextAlignment="Center"/>
-        <Button
-            Grid.Column="1"
-            Grid.Row="3"
-            x:Name="weightAddBtn"
-            BackgroundColor="{StaticResource fgColor}"
-            Text="Enter weight"/>
-    </Grid>
+
+    <!--  Tweaka storlekar och placement på saker för att passa mobil  -->
+    <VerticalStackLayout>
+        <Label
+            HorizontalOptions="Center"
+            Text="Current weight:"
+            TextColor="{StaticResource txtColor}" />
+        <Label
+            x:Name="currentWeight"
+            HorizontalOptions="Center"
+            TextColor="{StaticResource txtColor}" />
+
+
+        <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *, *">
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="{StaticResource fgColor}"
+                HeightRequest="100"
+                HorizontalTextAlignment="Center"
+                Text="Choose a time period"
+                TextColor="{StaticResource txtColor}"
+                VerticalTextAlignment="Center" />
+            <Button
+                x:Name="weekWeightBtn"
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="{StaticResource fgColor}"
+                Clicked="weekWeightBtn_Clicked"
+                Text="Last week" />
+            <Button
+                x:Name="monthWeightBtn"
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="{StaticResource fgColor}"
+                Clicked="monthWeightBtn_Clicked"
+                Text="Last month" />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Enter todays weight"
+                VerticalOptions="Center" />
+            <Entry
+                x:Name="addedWeight"
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="{StaticResource fgColor}"
+                HeightRequest="30"
+                HorizontalTextAlignment="Center"
+                TextColor="{StaticResource txtColor}"
+                VerticalTextAlignment="Center" />
+            <Button
+                x:Name="weightAddBtn"
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="{StaticResource fgColor}"
+                Text="Enter weight" />
+        </Grid>
+    </VerticalStackLayout>
 </ContentPage>

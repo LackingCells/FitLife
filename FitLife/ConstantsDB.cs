@@ -18,6 +18,9 @@ namespace FitLife
             // enable multi-threaded database access
             SQLite.SQLiteOpenFlags.SharedCache;
 
+        public static int daysToMonday;
+        public static int daysToSunday;
+
         public static string DatabasePath =>
             Path.Combine(FileSystem.AppDataDirectory, DatabaseFilename);
     }

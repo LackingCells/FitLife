@@ -17,8 +17,12 @@
             <Color x:Key="fgColor">#ABAF6E</Color>
             <Color x:Key="accColor1">#E07A5F</Color>
             <Color x:Key="accColor2">#F4B942</Color>
-            
-            
+
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource bgColor}" />
+            </Style>
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

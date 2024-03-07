@@ -37,7 +37,27 @@ public class WeightRepo
     public async Task<int> SaveWeightAsync(int weight)
     {
         await Init();
-        return await Database.InsertAsync(new Weight { DailyWeight = weight, Date = DateOnly.FromDateTime(DateTime.Today)});
+        return await Database.InsertAsync(new Weight { DailyWeight = weight, Date = DateOnly.FromDateTime(DateTime.Today) });
+    }
+
+    public async Task<float> GetWeekWeight(DateOnly today)
+    {
+        await Init();
+        float averageWeight;
+        List<Weight> weekWeight;
+        DateOnly monday = today.AddDays(ConstantsDB.daysToMonday);
+        DateOnly sunday = today.AddDays(ConstantsDB.daysToSunday);
+
+        weekWeight = await Database.Table<Weight>().Where(i => i.Date >= monday && i.Date <= sunday).ToListAsync();
+
+        float count = 0;
+        for (int i = 0; i < weekWeight.Count; i++)
+        {
+            count += weekWeight[i].DailyWeight;
+        }
+        averageWeight = count / weekWeight.Count;
+
+        return averageWeight;
     }
 
 
