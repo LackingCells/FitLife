@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 namespace FitLife.Logic.DB
 {
     [Table("daily_calories")]
-    public class Calories
+    public class Macro
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        [Column("calories")]
         public int Kcal {  get; set; }
+        [Column("protein")]
         public int Protein { get; set; }
+        [Column("date")]
+        public DateTime Date { get; set; }
     }
 }

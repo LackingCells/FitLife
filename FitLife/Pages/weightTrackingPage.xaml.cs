@@ -1,5 +1,6 @@
 using FitLife.Logic.DB;
 using System.Diagnostics;
+using System.Runtime.Intrinsics.X86;
 
 namespace FitLife.Pages;
 
@@ -16,30 +17,31 @@ public partial class weightTrackingPage : ContentPage
         
     }
 
-    private void weekWeightBtn_Clicked(object sender, EventArgs e)
+    private async void weekWeightBtn_Clicked(object sender, EventArgs e)
     {
-        
-        Task.Run(async () => weightList = await _dbService.GetWeekWeight());
+        weightList = await _dbService.GetWeekWeight(DateTime.Today);
         currentWeight.Text = getWeightAverageOf(weightList).ToString();
+        addedWeight.Text = getDateAverageOf(weightList).ToString();
+        //addedWeight.Text = DateTime.Today.ToString();
     }
 
     private async void monthWeightBtn_Clicked(object sender, EventArgs e)
     {
-        await _dbService.Create(new Weight
+        await _dbService.CreateWeight(new Weight
         {
-            DailyWeight = 87
+            DailyWeight = 87,
+            Date = DateTime.Today
         });
-        await _dbService.Create(new Weight
+        await _dbService.CreateWeight(new Weight
         {
-            DailyWeight = 83
+            DailyWeight = 150,
+            Date = DateTime.Today.AddDays(10)
         });
-        await _dbService.Create(new Weight
+        await _dbService.CreateWeight(new Weight
         {
-            DailyWeight = 84
+            DailyWeight = 84,
+            Date = DateTime.Today.AddDays(-1)
         });
-
-        weightList = await _dbService.GetWeekWeight();
-        currentWeight.Text = getWeightAverageOf(weightList).ToString();
     }
 
     private float getWeightAverageOf(List<Weight> weeklyWeight)
@@ -49,8 +51,26 @@ public partial class weightTrackingPage : ContentPage
         {
             sum += weight.DailyWeight;
         }
-        sum = sum / weeklyWeight.Count;
+        float avg = sum / weeklyWeight.Count;
 
-        return sum;
+        return avg;
+    }
+
+    private DateTime getDateAverageOf(List<Weight> weeklyWeight)
+    {
+        List<DateTime> sum = new List<DateTime>(weeklyWeight.Count);
+        double count = weeklyWeight.Count;
+        double temp = 0;
+
+        foreach (Weight weight in weeklyWeight)
+        {
+            sum.Add(weight.Date);
+        }
+
+        foreach (Weight time in weeklyWeight)
+        {
+            temp += time.Date.Ticks / count;
+        }
+        return new DateTime((long)temp);
     }
 }
