@@ -16,7 +16,7 @@ namespace FitLife.Logic.DB
         public int Kcal {  get; set; }
         [Column("protein")]
         public int Protein { get; set; }
-        [Column("date")]
+        [Column("date"), Unique]
         public DateTime Date { get; set; }
     }
 }

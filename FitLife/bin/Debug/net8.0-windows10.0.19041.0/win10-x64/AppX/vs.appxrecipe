@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-07T10:55:42.425</Modified>
+      <Modified>2024-03-11T14:29:50.684</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-07T10:55:42.232</Modified>
+      <Modified>2024-03-11T14:27:40.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FitLife.runtimeconfig.json">
       <PackagePath>FitLife.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-07T10:49:51.195</Modified>
+      <Modified>2024-03-11T13:11:06.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FitLife.dll">
       <PackagePath>FitLife.dll</PackagePath>
-      <Modified>2024-03-07T10:55:41.902</Modified>
+      <Modified>2024-03-11T14:29:50.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FitLife.exe</PackagePath>
-      <Modified>2024-03-07T10:55:41.910</Modified>
+      <Modified>2024-03-11T14:29:50.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -312,7 +312,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FitLife.deps.json">
       <PackagePath>FitLife.deps.json</PackagePath>
-      <Modified>2024-03-07T10:49:51.025</Modified>
+      <Modified>2024-03-11T13:11:06.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

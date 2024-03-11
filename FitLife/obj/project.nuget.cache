@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wiWGuspBsCdEFo33P+ozgY/pm7LyHlmvPMB4K9SGlel4IA94J7QoiMc39j+VCWjwQd5uoJVBCausHgNykVbB4Q==",
+  "dgSpecHash": "j2LQJtOXszIXuJMID1yJBCeoYU2JSJ5EKoElsQ8fhA7LmY86/LpQzXtMJmm/6KX1NsvxCp9uzt+BLiCUjoaKkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\FitLife.csproj",
   "expectedPackageFiles": [
@@ -122,11 +122,7 @@
     "C:\\Users\\Elias\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.0.1\\xamarin.kotlin.stdlib.jdk8.1.9.0.1.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.7.2.1\\xamarin.kotlinx.coroutines.android.1.7.2.1.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
-    "C:\\Users\\Elias\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.0\\microsoft.netcore.app.crossgen2.win-x64.8.0.0.nupkg.sha512",
-    "C:\\Users\\Elias\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512",
-    "C:\\Users\\Elias\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.0\\microsoft.aspnetcore.app.runtime.win-x64.8.0.0.nupkg.sha512",
-    "C:\\Users\\Elias\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.0.nupkg.sha512",
-    "C:\\Users\\Elias\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.0\\microsoft.netcore.app.runtime.win-x64.8.0.0.nupkg.sha512"
+    "C:\\Users\\Elias\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
   "logs": []
 }

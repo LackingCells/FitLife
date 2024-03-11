@@ -22,7 +22,6 @@ public partial class weightTrackingPage : ContentPage
         weightList = await _dbService.GetWeekWeight(DateTime.Today);
         currentWeight.Text = getWeightAverageOf(weightList).ToString();
         addedWeight.Text = getDateAverageOf(weightList).ToString();
-        //addedWeight.Text = DateTime.Today.ToString();
     }
 
     private async void monthWeightBtn_Clicked(object sender, EventArgs e)
@@ -34,13 +33,13 @@ public partial class weightTrackingPage : ContentPage
         });
         await _dbService.CreateWeight(new Weight
         {
-            DailyWeight = 150,
-            Date = DateTime.Today.AddDays(10)
+            DailyWeight = 89,
+            Date = DateTime.Today.AddDays(2)
         });
         await _dbService.CreateWeight(new Weight
         {
-            DailyWeight = 84,
-            Date = DateTime.Today.AddDays(-1)
+            DailyWeight = 91,
+            Date = DateTime.Today.AddDays(4)
         });
     }
 
@@ -56,7 +55,7 @@ public partial class weightTrackingPage : ContentPage
         return avg;
     }
 
-    private DateTime getDateAverageOf(List<Weight> weeklyWeight)
+    private DateTime getDateAverageOf(List<Weight> weeklyWeight) //debug method to check if date-handling works
     {
         List<DateTime> sum = new List<DateTime>(weeklyWeight.Count);
         double count = weeklyWeight.Count;
