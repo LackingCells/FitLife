@@ -18,10 +18,34 @@
             <Color x:Key="accColor1">#E07A5F</Color>
             <Color x:Key="accColor2">#F4B942</Color>
 
-            <Style TargetType="ContentPage">
+            <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
                 <Setter Property="BackgroundColor" Value="{StaticResource bgColor}" />
             </Style>
-
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource txtColor}" />
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="{StaticResource txtColor}" />
+                <Setter Property="TextColor" Value="{StaticResource bgColor}" />
+            </Style>
+            <Style TargetType="Border">
+                <Setter Property="Stroke" Value="{StaticResource accColor2}" />
+                <Setter Property="StrokeShape" Value="RoundRectangle 10,10,10,10" />
+                <Setter Property="BackgroundColor" Value="{StaticResource fgColor}" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Padding" Value="10" />
+            </Style>
+            <Style x:Key="vStackInside" TargetType="VerticalStackLayout">
+                <Setter Property="Spacing" Value="5" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource fgColor}" />
+                <Setter Property="TextColor" Value="{StaticResource txtColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource accColor2}" />
+            </Style>
+            <Style TargetType="DatePicker">
+                <Setter Property="TextColor" Value="{StaticResource txtColor}" />
+            </Style>
 
         </ResourceDictionary>
     </Application.Resources>

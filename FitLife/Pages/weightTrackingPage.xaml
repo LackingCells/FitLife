@@ -15,63 +15,61 @@
 
     <!--  Tweaka storlekar och placement på saker för att passa mobil  -->
     <VerticalStackLayout>
-        <Label
-            HorizontalOptions="Center"
-            Text="Current weight:"
-            TextColor="{StaticResource txtColor}" />
-        <Label
-            x:Name="currentWeight"
-            HorizontalOptions="Center"
-            TextColor="{StaticResource txtColor}" />
-
-
-        <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *, *">
+        <Label HorizontalOptions="Center" Text="Current weight:" />
+        <Border HeightRequest="50" WidthRequest="130">
             <Label
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                BackgroundColor="{StaticResource fgColor}"
-                HeightRequest="100"
-                HorizontalTextAlignment="Center"
-                Text="Choose a time period"
-                TextColor="{StaticResource txtColor}"
-                VerticalTextAlignment="Center" />
-            <Button
-                x:Name="weekWeightBtn"
-                Grid.Row="1"
-                Grid.Column="0"
-                BackgroundColor="{StaticResource fgColor}"
-                Clicked="weekWeightBtn_Clicked"
-                Text="Last week" />
-            <Button
-                x:Name="monthWeightBtn"
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="{StaticResource fgColor}"
-                Clicked="monthWeightBtn_Clicked"
-                Text="Last month" />
-
-            <Label
-                Grid.Row="2"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                Text="Enter todays weight"
+                x:Name="currentWeight"
+                HorizontalOptions="Center"
                 VerticalOptions="Center" />
-            <Entry
-                x:Name="addedWeight"
-                Grid.Row="3"
-                Grid.Column="0"
-                BackgroundColor="{StaticResource fgColor}"
-                HeightRequest="30"
-                HorizontalTextAlignment="Center"
-                TextColor="{StaticResource txtColor}"
-                VerticalTextAlignment="Center" />
-            <Button
-                x:Name="weightAddBtn"
-                Grid.Row="3"
-                Grid.Column="1"
-                BackgroundColor="{StaticResource fgColor}"
-                Text="Enter weight" />
+        </Border>
+
+        <!--  Kolla hur input funkar mobilt, behövs det en enter knapp eller e det inbyggt?  -->
+        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*">
+            <Border Grid.Column="0" HorizontalOptions="End">
+                <VerticalStackLayout>
+                    <Label Text="Enter todays weight:" />
+                    <Entry HorizontalOptions="Center" Placeholder="__________________" />
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Column="2" HorizontalOptions="Start">
+                <VerticalStackLayout>
+                    <Label Text="Add calories and protein:" />
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Entry Placeholder="Calories" />
+                        <Entry Placeholder="Protein" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
         </Grid>
+
+        <Border HorizontalOptions="Center">
+            <VerticalStackLayout Style="{StaticResource vStackInside}">
+                <Label HorizontalOptions="Center" Text="Weight, kcal and protein progress:" />
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Button Text="From start" />
+                    <Button Text="Last month" />
+                </HorizontalStackLayout>
+                <!--
+                    Sätt in en graph här, behöver förmodligen plugin. Behöver kanske ligga vertikalt eller ha en switch för vilken man vill se
+                    Även bättre med grid här
+                -->
+                <HorizontalStackLayout Spacing="10">
+                    <VerticalStackLayout Style="{StaticResource vStackInside}">
+                        <Label HorizontalOptions="Center" Text="Weight:" />
+                        <BoxView HeightRequest="200" WidthRequest="300" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Style="{StaticResource vStackInside}">
+                        <Label HorizontalOptions="Center" Text="Kcal:" />
+                        <BoxView HeightRequest="200" WidthRequest="300" />
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Style="{StaticResource vStackInside}">
+                        <Label HorizontalOptions="Center" Text="Protein:" />
+                        <BoxView HeightRequest="200" WidthRequest="300" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+
+
     </VerticalStackLayout>
 </ContentPage>

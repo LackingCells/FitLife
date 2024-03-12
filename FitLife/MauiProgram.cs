@@ -18,6 +18,7 @@ namespace FitLife
                 });
 
             builder.Services.AddSingleton<weightTrackingPage>();
+            builder.Services.AddSingleton<settingPage>();
             builder.Services.AddSingleton<DBService>();
 
 #if DEBUG
