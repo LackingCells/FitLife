@@ -25,15 +25,23 @@ namespace FitLife.Logic.DB
             _connection.CreateTableAsync<Macro>();
         }
 
+        //FOR WEIGHT:
+
         public async Task<List<Weight>> GetWeekWeight(DateTime date) //ger en lista på vikter under vikten in-datumet ligger i baserat på dagen datum. funkar bara på dagens datum
         {
             DateTime monday = DateTime.Today.AddDays(ConstantsDB.daysToMonday);
             DateTime sunday = DateTime.Today.AddDays(ConstantsDB.daysToSunday);
 
+            Debug.WriteLine("getting this weeks weight");
             return await _connection.Table<Weight>()
                                 .Where(d => d.Date >= monday && d.Date <= sunday)
+                                .OrderBy(d => d.Date)
                                 .ToListAsync();
-            Debug.WriteLine("getting this weeks weight");
+        }
+
+        public async Task<List<Weight>> GetAllTimeWeight()
+        {
+            return await _connection.Table<Weight>().OrderBy(d => d.Date).ToListAsync();
         }
 
         public async Task CreateWeight(Weight newWeight)
@@ -48,6 +56,9 @@ namespace FitLife.Logic.DB
                 Debug.WriteLine("Adding new weight for date: " + newWeight.Date.ToString());
             } else { Debug.WriteLine("weight already inputted for date: " + newWeight.Date.ToString()); }
         } 
+
+
+        //FOR MACROS:
 
         public async Task CreateMacro(Macro newMacro)
         {
@@ -67,6 +78,23 @@ namespace FitLife.Logic.DB
                 await _connection.UpdateAsync(newMacro);
                 Debug.WriteLine("updating macro for date: " + newMacro.Date.ToString());
             }
+        }
+
+        public async Task<List<Macro>> GetWeekMacro(DateTime date) //funkar bara på dagens datum
+        {
+            DateTime monday = DateTime.Today.AddDays(ConstantsDB.daysToMonday);
+            DateTime sunday = DateTime.Today.AddDays(ConstantsDB.daysToSunday);
+
+            Debug.WriteLine("getting this weeks weight");
+            return await _connection.Table<Macro>()
+                                .Where(d => d.Date >= monday && d.Date <= sunday)
+                                .OrderBy(d => d.Date)
+                                .ToListAsync();
+        }
+
+        public async Task<List<Macro>> GetAllTimeMacro()
+        {
+            return await _connection.Table<Macro>().OrderBy(d => d.Date).ToListAsync();
         }
     }
 }

@@ -161,3 +161,5 @@ Microsoft.Maui.Essentials.aar
 SQLitePCLRaw.lib.e_sqlite3.android.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 Xamarin.Google.ErrorProne.Annotations.aar
+Syncfusion.Maui.Charts.dll
+Syncfusion.Maui.Core.dll

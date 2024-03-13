@@ -1,4 +1,5 @@
 using FitLife.Logic.DB;
+using System.Diagnostics;
 
 namespace FitLife.Pages;
 
@@ -13,25 +14,40 @@ public partial class settingPage : ContentPage
 
     private async void SaveWeight_Clicked(object sender, EventArgs e)
     {
-        await _dbService.CreateWeight(new Weight
+        if (weightKg.Text != null)
         {
-            DailyWeight = float.Parse(weightKg.Text),
-            Date = weightDate.Date
-        });
-        weightDate.Date = DateTime.Now;
-        weightKg.Text = string.Empty;
+            await _dbService.CreateWeight(new Weight
+            {
+                DailyWeight = float.Parse(weightKg.Text),
+                Date = weightDate.Date
+            });
+            weightDate.Date = DateTime.Now;
+            weightKg.Text = null;
+        }
     }
 
     private async void SaveKcalProtein_Clicked(object sender, EventArgs e)
     {
-        await _dbService.CreateMacro(new Macro
+        if (Kcal.Text != null || Protein.Text != null)
         {
-            Kcal = int.Parse(Kcal.Text),
-            Protein = int.Parse(Protein.Text),
-            Date = kcalProteinDate.Date
-        });
-        Kcal.Text = string.Empty;
-        Protein.Text = string.Empty;
-        kcalProteinDate.Date = DateTime.Today;
+            if (Kcal.Text == null) 
+            {
+                Kcal.Text = "0";
+            }
+            if (Protein.Text == null)
+            {
+                Protein.Text = "0";
+            }
+
+            await _dbService.CreateMacro(new Macro
+            {
+                Kcal = int.Parse(Kcal.Text),
+                Protein = int.Parse(Protein.Text),
+                Date = kcalProteinDate.Date
+            });
+            Kcal.Text = null;
+            Protein.Text = null;
+            kcalProteinDate.Date = DateTime.Today;
+        }
     }
 }

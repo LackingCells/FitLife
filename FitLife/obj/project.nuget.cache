@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j2LQJtOXszIXuJMID1yJBCeoYU2JSJ5EKoElsQ8fhA7LmY86/LpQzXtMJmm/6KX1NsvxCp9uzt+BLiCUjoaKkQ==",
+  "dgSpecHash": "r7fo2JwGItFKcjSzrMS4+ff62JV8xtFtyeShm1+MKpSh8Q3MBHSKlqSvBVwo/vQ3CTYS3IIzHmIRZSoaz9beNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Elias\\source\\repos\\FitLife\\FitLife\\FitLife.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,9 @@
     "C:\\Users\\Elias\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.1.8\\sqlitepclraw.lib.e_sqlite3.android.2.1.8.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.8\\sqlitepclraw.provider.e_sqlite3.2.1.8.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\sqlitepclraw.provider.sqlite3\\2.1.8\\sqlitepclraw.provider.sqlite3.2.1.8.nupkg.sha512",
+    "C:\\Users\\Elias\\.nuget\\packages\\syncfusion.licensing\\24.2.9\\syncfusion.licensing.24.2.9.nupkg.sha512",
+    "C:\\Users\\Elias\\.nuget\\packages\\syncfusion.maui.charts\\24.2.9\\syncfusion.maui.charts.24.2.9.nupkg.sha512",
+    "C:\\Users\\Elias\\.nuget\\packages\\syncfusion.maui.core\\24.2.9\\syncfusion.maui.core.24.2.9.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Elias\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",

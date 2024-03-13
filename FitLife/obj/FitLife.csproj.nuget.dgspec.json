@@ -83,6 +83,10 @@
               "target": "Package",
               "version": "[2.1.8, )"
             },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[24.2.9, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.8.116, )"
@@ -133,6 +137,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.8, )"
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[24.2.9, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -185,6 +193,10 @@
               "target": "Package",
               "version": "[2.1.8, )"
             },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[24.2.9, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.8.116, )"
@@ -230,6 +242,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.8, )"
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[24.2.9, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

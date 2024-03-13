@@ -187,3 +187,6 @@ C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0
 C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Licensing.dll
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Maui.Charts.dll
+C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Maui.Core.dll

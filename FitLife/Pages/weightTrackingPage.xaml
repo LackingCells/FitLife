@@ -3,7 +3,13 @@
     x:Class="FitLife.Pages.weightTrackingPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+    xmlns:model="clr-namespace:FitLife.Logic.ViewModels"
     Title="weightTrackingPage">
+
+    <ContentPage.BindingContext>
+        <model:VMWeightChart />
+    </ContentPage.BindingContext>
     <!--
         1. Current weight i kilo, tar genomsnittet den senaste veckan
         2. Insert daily weight
@@ -46,13 +52,50 @@
             <VerticalStackLayout Style="{StaticResource vStackInside}">
                 <Label HorizontalOptions="Center" Text="Weight, kcal and protein progress:" />
                 <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                    <Button Text="From start" />
+                    <Button Text="From start" Clicked="AllTimeButton_Clicked"/>
                     <Button Text="Last month" />
                 </HorizontalStackLayout>
                 <!--
                     Sätt in en graph här, behöver förmodligen plugin. Behöver kanske ligga vertikalt eller ha en switch för vilken man vill se
                     Även bättre med grid här
                 -->
+                <!--<Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*">-->
+                <chart:SfCartesianChart x:Name="SFChart">
+                    <chart:SfCartesianChart.Title>
+                        <Label HorizontalOptions="Center" Text="Weight" />
+                    </chart:SfCartesianChart.Title>
+                    <chart:SfCartesianChart.XAxes>
+                        <chart:CategoryAxis>
+                            <chart:CategoryAxis.Title>
+                                <chart:ChartAxisTitle Text="Date" />
+                            </chart:CategoryAxis.Title>
+                        </chart:CategoryAxis>
+                    </chart:SfCartesianChart.XAxes>
+                    <chart:SfCartesianChart.YAxes>
+                        <chart:NumericalAxis>
+                            <chart:NumericalAxis.Title>
+                                <chart:ChartAxisTitle Text="Weight" />
+                            </chart:NumericalAxis.Title>
+                        </chart:NumericalAxis>
+                    </chart:SfCartesianChart.YAxes>
+
+                    <chart:FastLineSeries
+                        EnableAntiAliasing="True"
+                        ItemsSource="{Binding Weight}"
+                        XBindingPath="Date"
+                        YBindingPath="DailyWeight" />
+                    <chart:FastLineSeries
+                        EnableAntiAliasing="True"
+                        ItemsSource="{Binding Macro}"
+                        XBindingPath="Date"
+                        YBindingPath="Calories" />
+                    <chart:FastLineSeries
+                        EnableAntiAliasing="True"
+                        ItemsSource="{Binding Macro}"
+                        XBindingPath="Date"
+                        YBindingPath="Protein" />
+                </chart:SfCartesianChart>
+                <!--</Grid>
                 <HorizontalStackLayout Spacing="10">
                     <VerticalStackLayout Style="{StaticResource vStackInside}">
                         <Label HorizontalOptions="Center" Text="Weight:" />
@@ -66,7 +109,7 @@
                         <Label HorizontalOptions="Center" Text="Protein:" />
                         <BoxView HeightRequest="200" WidthRequest="300" />
                     </VerticalStackLayout>
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
             </VerticalStackLayout>
         </Border>
 

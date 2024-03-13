@@ -1,4 +1,5 @@
 using FitLife.Logic.DB;
+using FitLife.Logic.ViewModels;
 using System.Diagnostics;
 using System.Runtime.Intrinsics.X86;
 
@@ -8,14 +9,22 @@ namespace FitLife.Pages;
 public partial class weightTrackingPage : ContentPage
 {
     private readonly DBService _dbService;
-    List<Weight> weightList = new List<Weight>();
+    private List<Weight> weightList = new List<Weight>();
+    private List<Macro> macroList = new List<Macro>();
+    private VMWeightChart chart;
 
     public weightTrackingPage(DBService dbService)
     {
         InitializeComponent();
         _dbService = dbService;
-        Task.Run(async () => weightList = await _dbService.GetWeekWeight(DateTime.Today)); 
+        Task.Run(async () => weightList = await _dbService.GetWeekWeight(DateTime.Today));
+        Task.Run(async () => macroList = await _dbService.GetWeekMacro(DateTime.Today));
         currentWeight.Text = getWeightAverageOf(weightList).ToString() + " kg";
+        chart = BindingContext as VMWeightChart;
+        chart.UpdateWeightChart(weightList);
+        chart.UpdateMacroChart(macroList);
+        //uppdatera charten, macro och weight
+
     }
 
     //Har kvar för att komma ihåg hur create funkar
@@ -50,21 +59,11 @@ public partial class weightTrackingPage : ContentPage
         return avg;
     }
 
-//    private DateTime getDateAverageOf(List<Weight> weeklyWeight) //debug method to check if date-handling works
-//    {
-//        List<DateTime> sum = new List<DateTime>(weeklyWeight.Count);
-//        double count = weeklyWeight.Count;
-//        double temp = 0;
-
-//        foreach (Weight weight in weeklyWeight)
-//        {
-//            sum.Add(weight.Date);
-//        }
-
-//        foreach (Weight time in weeklyWeight)
-//        {
-//            temp += time.Date.Ticks / count;
-//        }
-//        return new DateTime((long)temp);
-//    }
+    private async void AllTimeButton_Clicked(object sender, EventArgs e)
+    {
+        weightList = await _dbService.GetAllTimeWeight();
+        macroList = await _dbService.GetAllTimeMacro();
+        chart.UpdateWeightChart(weightList);
+        chart.UpdateMacroChart(macroList);
+    }
 }
