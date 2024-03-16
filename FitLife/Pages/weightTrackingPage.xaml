@@ -57,12 +57,8 @@
                     <Button Clicked="AllTimeButton_Clicked" Text="From start" />
                     <Button Text="Last month" />
                 </HorizontalStackLayout>
-                <!--
-                    Sätt in en graph här, behöver förmodligen plugin. Behöver kanske ligga vertikalt eller ha en switch för vilken man vill se
-                    Även bättre med grid här
-                -->
-                <!--<Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*">-->
-                <chart:SfCartesianChart x:Name="SFChart">
+
+                <chart:SfCartesianChart x:Name="SFChart" HeightRequest="300">
                     <chart:SfCartesianChart.Title>
                         <Label HorizontalOptions="Center" />
                     </chart:SfCartesianChart.Title>
