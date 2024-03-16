@@ -457,6 +457,15 @@
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Syncfusion.Maui.Charts.dll">
+      <PackagePath>Syncfusion.Maui.Charts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Syncfusion.Maui.Core.dll">
+      <PackagePath>Syncfusion.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\FitLife.dll">
       <PackagePath>FitLife.dll</PackagePath>
     </AppxPackagedFile>
@@ -468,6 +477,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.maui.core\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
+      <PackagePath>Syncfusion.Maui.Core.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,7 @@
           "Microsoft.Maui.Controls": "8.0.7",
           "Microsoft.Maui.Controls.Compatibility": "8.0.7",
           "SQLitePCLRaw.bundle_green": "2.1.8",
+          "Syncfusion.Maui.Charts": "24.2.9",
           "sqlite-net-pcl": "1.8.116",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
@@ -491,6 +492,36 @@
           }
         }
       },
+      "Syncfusion.Licensing/24.2.9": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "24.2.9.0",
+            "fileVersion": "24.2.9.0"
+          }
+        }
+      },
+      "Syncfusion.Maui.Charts/24.2.9": {
+        "dependencies": {
+          "Syncfusion.Maui.Core": "24.2.9"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Charts.dll": {
+            "assemblyVersion": "24.2.9.0",
+            "fileVersion": "24.2.9.0"
+          }
+        }
+      },
+      "Syncfusion.Maui.Core/24.2.9": {
+        "dependencies": {
+          "Syncfusion.Licensing": "24.2.9"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
+            "assemblyVersion": "24.2.9.0",
+            "fileVersion": "24.2.9.0"
+          }
+        }
+      },
       "System.Memory/4.5.3": {}
     }
   },
@@ -693,6 +724,27 @@
       "sha512": "sha512-g5pnvmUereQirZkJGbZiOR2Y9bBlhHVt7Vgmnu3CGq00VdyGfD9hyQN0f8yrrSfFfgtbuxWDw2VTdDAOuMZEzQ==",
       "path": "sqlitepclraw.provider.e_sqlite3/2.1.8",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.8.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/24.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dkXB1w0KoBGFp4quLawVL/URpqjsVETzFGsdixRhKY0Q/pEBhMpds+QYLzzzmpYvOlC6+rL5MLf7cc297bwtWw==",
+      "path": "syncfusion.licensing/24.2.9",
+      "hashPath": "syncfusion.licensing.24.2.9.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Charts/24.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u/VOhwsaWeKkgEAT1CLW6TILctdXKWc70tbxJboC5c6QTv3QUj0BYBRyQvnpr1JFxU5E8oXiX8SikkF4q4nHMQ==",
+      "path": "syncfusion.maui.charts/24.2.9",
+      "hashPath": "syncfusion.maui.charts.24.2.9.nupkg.sha512"
+    },
+    "Syncfusion.Maui.Core/24.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w9witZGfN0Tw6qszweltY3V4pVI97Hl85BppkLRLG+JAIM5ZzQ5k2gQuOrxKLiAKHOdj5JiJSChY6WS7YOu6Zw==",
+      "path": "syncfusion.maui.core/24.2.9",
+      "hashPath": "syncfusion.maui.core.24.2.9.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",

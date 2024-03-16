@@ -34,16 +34,18 @@
             <Border Grid.Column="0" HorizontalOptions="End">
                 <VerticalStackLayout>
                     <Label Text="Enter todays weight:" />
-                    <Entry HorizontalOptions="Center" Placeholder="__________________" />
+                    <Entry x:Name="weightKg" HorizontalOptions="CenterAndExpand" />
+                    <Button Clicked="WeightButton_Clicked" Text="Confirm" />
                 </VerticalStackLayout>
             </Border>
             <Border Grid.Column="2" HorizontalOptions="Start">
                 <VerticalStackLayout>
                     <Label Text="Add calories and protein:" />
                     <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                        <Entry Placeholder="Calories" />
-                        <Entry Placeholder="Protein" />
+                        <Entry x:Name="Kcal" Placeholder="Calories" />
+                        <Entry x:Name="Protein" Placeholder="Protein" />
                     </HorizontalStackLayout>
+                    <Button Clicked="KcalProteinButton_Clicked" Text="Add" />
                 </VerticalStackLayout>
             </Border>
         </Grid>
@@ -52,7 +54,7 @@
             <VerticalStackLayout Style="{StaticResource vStackInside}">
                 <Label HorizontalOptions="Center" Text="Weight, kcal and protein progress:" />
                 <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                    <Button Text="From start" Clicked="AllTimeButton_Clicked"/>
+                    <Button Clicked="AllTimeButton_Clicked" Text="From start" />
                     <Button Text="Last month" />
                 </HorizontalStackLayout>
                 <!--
@@ -62,54 +64,46 @@
                 <!--<Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*">-->
                 <chart:SfCartesianChart x:Name="SFChart">
                     <chart:SfCartesianChart.Title>
-                        <Label HorizontalOptions="Center" Text="Weight" />
+                        <Label HorizontalOptions="Center" />
                     </chart:SfCartesianChart.Title>
                     <chart:SfCartesianChart.XAxes>
-                        <chart:CategoryAxis>
+                        <chart:CategoryAxis ShowMajorGridLines="False">
                             <chart:CategoryAxis.Title>
                                 <chart:ChartAxisTitle Text="Date" />
                             </chart:CategoryAxis.Title>
                         </chart:CategoryAxis>
                     </chart:SfCartesianChart.XAxes>
                     <chart:SfCartesianChart.YAxes>
-                        <chart:NumericalAxis>
+                        <chart:NumericalAxis ShowMinorGridLines="False">
                             <chart:NumericalAxis.Title>
-                                <chart:ChartAxisTitle Text="Weight" />
+                                <chart:ChartAxisTitle Text="Value" />
                             </chart:NumericalAxis.Title>
                         </chart:NumericalAxis>
                     </chart:SfCartesianChart.YAxes>
-
+                    <chart:SfCartesianChart.Legend>
+                        <chart:ChartLegend ToggleSeriesVisibility="True" />
+                    </chart:SfCartesianChart.Legend>
                     <chart:FastLineSeries
                         EnableAntiAliasing="True"
                         ItemsSource="{Binding Weight}"
+                        Label="Weight"
                         XBindingPath="Date"
                         YBindingPath="DailyWeight" />
                     <chart:FastLineSeries
                         EnableAntiAliasing="True"
+                        IsVisible="False"
                         ItemsSource="{Binding Macro}"
+                        Label="Calories"
                         XBindingPath="Date"
                         YBindingPath="Calories" />
                     <chart:FastLineSeries
                         EnableAntiAliasing="True"
+                        IsVisible="False"
                         ItemsSource="{Binding Macro}"
+                        Label="Protein"
                         XBindingPath="Date"
                         YBindingPath="Protein" />
                 </chart:SfCartesianChart>
-                <!--</Grid>
-                <HorizontalStackLayout Spacing="10">
-                    <VerticalStackLayout Style="{StaticResource vStackInside}">
-                        <Label HorizontalOptions="Center" Text="Weight:" />
-                        <BoxView HeightRequest="200" WidthRequest="300" />
-                    </VerticalStackLayout>
-                    <VerticalStackLayout Style="{StaticResource vStackInside}">
-                        <Label HorizontalOptions="Center" Text="Kcal:" />
-                        <BoxView HeightRequest="200" WidthRequest="300" />
-                    </VerticalStackLayout>
-                    <VerticalStackLayout Style="{StaticResource vStackInside}">
-                        <Label HorizontalOptions="Center" Text="Protein:" />
-                        <BoxView HeightRequest="200" WidthRequest="300" />
-                    </VerticalStackLayout>
-                </HorizontalStackLayout>-->
             </VerticalStackLayout>
         </Border>
 

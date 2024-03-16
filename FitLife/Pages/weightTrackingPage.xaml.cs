@@ -21,10 +21,7 @@ public partial class weightTrackingPage : ContentPage
         Task.Run(async () => macroList = await _dbService.GetWeekMacro(DateTime.Today));
         currentWeight.Text = getWeightAverageOf(weightList).ToString() + " kg";
         chart = BindingContext as VMWeightChart;
-        chart.UpdateWeightChart(weightList);
-        chart.UpdateMacroChart(macroList);
-        //uppdatera charten, macro och weight
-
+        UpdateLists();
     }
 
     //Har kvar för att komma ihåg hur create funkar
@@ -63,6 +60,49 @@ public partial class weightTrackingPage : ContentPage
     {
         weightList = await _dbService.GetAllTimeWeight();
         macroList = await _dbService.GetAllTimeMacro();
+        UpdateLists();
+    }
+
+    private async void WeightButton_Clicked(object sender, EventArgs e)
+    {
+        if (weightKg.Text != null)
+        {
+            await _dbService.CreateWeight(new Weight
+            {
+                DailyWeight = float.Parse(weightKg.Text),
+                Date = DateTime.Today
+            }, this);
+            weightKg.Text = "weight entered";
+        }
+
+    }
+
+    private async void KcalProteinButton_Clicked(object sender, EventArgs e)
+    {
+        if (Kcal.Text != null || Protein.Text != null)
+        {
+            if (Kcal.Text == null)
+            {
+                Kcal.Text = "0";
+            }
+            if (Protein.Text == null)
+            {
+                Protein.Text = "0";
+            }
+
+            await _dbService.CreateMacro(new Macro
+            {
+                Kcal = int.Parse(Kcal.Text),
+                Protein = int.Parse(Protein.Text),
+                Date = DateTime.Today
+            }, this);
+            Kcal.Text = null;
+            Protein.Text = null;
+        }
+    }
+
+    public void UpdateLists()
+    {
         chart.UpdateWeightChart(weightList);
         chart.UpdateMacroChart(macroList);
     }

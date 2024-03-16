@@ -20,7 +20,7 @@ public partial class settingPage : ContentPage
             {
                 DailyWeight = float.Parse(weightKg.Text),
                 Date = weightDate.Date
-            });
+            }, this);
             weightDate.Date = DateTime.Now;
             weightKg.Text = null;
         }
@@ -44,7 +44,7 @@ public partial class settingPage : ContentPage
                 Kcal = int.Parse(Kcal.Text),
                 Protein = int.Parse(Protein.Text),
                 Date = kcalProteinDate.Date
-            });
+            }, this);
             Kcal.Text = null;
             Protein.Text = null;
             kcalProteinDate.Date = DateTime.Today;
