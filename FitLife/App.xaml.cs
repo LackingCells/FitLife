@@ -12,7 +12,7 @@
             switch (DateTime.Today.DayOfWeek)
             {
                 case DayOfWeek.Monday:
-                    ConstantsDB.daysToMonday = -0;
+                    ConstantsDB.daysToMonday = 0;
                     ConstantsDB.daysToSunday = 6;
                     break;
                 case DayOfWeek.Tuesday:

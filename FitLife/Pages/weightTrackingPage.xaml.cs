@@ -17,33 +17,14 @@ public partial class weightTrackingPage : ContentPage
     {
         InitializeComponent();
         _dbService = dbService;
-        Task.Run(async () => weightList = await _dbService.GetWeekWeight(DateTime.Today));
-        Task.Run(async () => macroList = await _dbService.GetWeekMacro(DateTime.Today));
-        currentWeight.Text = getWeightAverageOf(weightList).ToString() + " kg";
+        Task.Run(async () => weightList = await _dbService.GetWeekWeight(DateTime.Today)); //problem med detta, funkar inte
+        Task.Run(async () => macroList = await _dbService.GetWeekMacro(DateTime.Today)); //samma
+        currentWeight.Text = getWeightAverageOf(weightList) + " kg";
+        Debug.WriteLine(getWeightAverageOf(weightList));
         chart = BindingContext as VMWeightChart;
-        UpdateLists();
     }
 
-    //Har kvar för att komma ihåg hur create funkar
-    //private async void monthWeightBtn_Clicked(object sender, EventArgs e)
-    //{
-    //    await _dbService.CreateWeight(new Weight
-    //    {
-    //        DailyWeight = 87,
-    //        Date = DateTime.Today
-    //    });
-    //    await _dbService.CreateWeight(new Weight
-    //    {
-    //        DailyWeight = 89,
-    //        Date = DateTime.Today.AddDays(2)
-    //    });
-    //    await _dbService.CreateWeight(new Weight
-    //    {
-    //        DailyWeight = 91,
-    //        Date = DateTime.Today.AddDays(4)
-    //    });
-    //}
-
+    //METHODS
     private float getWeightAverageOf(List<Weight> weeklyWeight)
     {
         float sum = 0;
@@ -55,12 +36,21 @@ public partial class weightTrackingPage : ContentPage
 
         return avg;
     }
+    public void UpdateLists()
+    {
+        chart.UpdateWeightChart(weightList);
+        chart.UpdateMacroChart(macroList);
+    }
 
+
+
+    //BUTTONS
     private async void AllTimeButton_Clicked(object sender, EventArgs e)
     {
         weightList = await _dbService.GetAllTimeWeight();
         macroList = await _dbService.GetAllTimeMacro();
         UpdateLists();
+        currentWeight.Text = getWeightAverageOf(weightList) + " kg";
     }
 
     private async void WeightButton_Clicked(object sender, EventArgs e)
@@ -101,9 +91,23 @@ public partial class weightTrackingPage : ContentPage
         }
     }
 
-    public void UpdateLists()
-    {
-        chart.UpdateWeightChart(weightList);
-        chart.UpdateMacroChart(macroList);
-    }
+    //Har kvar för att komma ihåg hur create funkar
+    //private async void monthWeightBtn_Clicked(object sender, EventArgs e)
+    //{
+    //    await _dbService.CreateWeight(new Weight
+    //    {
+    //        DailyWeight = 87,
+    //        Date = DateTime.Today
+    //    });
+    //    await _dbService.CreateWeight(new Weight
+    //    {
+    //        DailyWeight = 89,
+    //        Date = DateTime.Today.AddDays(2)
+    //    });
+    //    await _dbService.CreateWeight(new Weight
+    //    {
+    //        DailyWeight = 91,
+    //        Date = DateTime.Today.AddDays(4)
+    //    });
+    //}
 }
