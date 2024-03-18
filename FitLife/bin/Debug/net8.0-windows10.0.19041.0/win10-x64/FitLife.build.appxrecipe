@@ -349,13 +349,16 @@
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.8\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.licensing\24.2.9\lib\net8.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.licensing\25.1.35\lib\net8.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.buttons\25.1.35\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Buttons.dll">
+      <PackagePath>Syncfusion.Maui.Buttons.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.charts\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Charts.dll">
       <PackagePath>Syncfusion.Maui.Charts.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\25.1.35\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.dll">
       <PackagePath>Syncfusion.Maui.Core.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
@@ -460,6 +463,9 @@
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.buttons\25.1.35\lib\net8.0-windows10.0.19041.0\en-US\Syncfusion.Maui.Buttons.resources.dll">
+      <PackagePath>en-US\Syncfusion.Maui.Buttons.resources.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
@@ -478,7 +484,7 @@
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.maui.core\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\25.1.35\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
       <PackagePath>Syncfusion.Maui.Core.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

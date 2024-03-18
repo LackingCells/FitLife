@@ -17,11 +17,20 @@ public partial class weightTrackingPage : ContentPage
     {
         InitializeComponent();
         _dbService = dbService;
-        Task.Run(async () => weightList = await _dbService.GetWeekWeight(DateTime.Today)); //problem med detta, funkar inte
-        Task.Run(async () => macroList = await _dbService.GetWeekMacro(DateTime.Today)); //samma
-        currentWeight.Text = getWeightAverageOf(weightList) + " kg";
-        Debug.WriteLine(getWeightAverageOf(weightList));
-        chart = BindingContext as VMWeightChart;
+        InitializeAsyncs();
+    }
+
+    private async void InitializeAsyncs()
+    {
+        weightList = await _dbService.GetWeekWeight(DateTime.Today);
+        macroList = await _dbService.GetWeekMacro(DateTime.Today);
+
+        MainThread.BeginInvokeOnMainThread(() =>
+        {
+            currentWeight.Text = getWeightAverageOf(weightList) + " kg";
+            Debug.WriteLine(getWeightAverageOf(weightList));
+            chart = BindingContext as VMWeightChart;
+        });
     }
 
     //METHODS
@@ -31,6 +40,7 @@ public partial class weightTrackingPage : ContentPage
         foreach (Weight weight in weeklyWeight)
         {
             sum += weight.DailyWeight;
+            Debug.WriteLine(weight.Date);
         }
         float avg = sum / weeklyWeight.Count;
 
@@ -91,23 +101,8 @@ public partial class weightTrackingPage : ContentPage
         }
     }
 
-    //Har kvar för att komma ihåg hur create funkar
-    //private async void monthWeightBtn_Clicked(object sender, EventArgs e)
-    //{
-    //    await _dbService.CreateWeight(new Weight
-    //    {
-    //        DailyWeight = 87,
-    //        Date = DateTime.Today
-    //    });
-    //    await _dbService.CreateWeight(new Weight
-    //    {
-    //        DailyWeight = 89,
-    //        Date = DateTime.Today.AddDays(2)
-    //    });
-    //    await _dbService.CreateWeight(new Weight
-    //    {
-    //        DailyWeight = 91,
-    //        Date = DateTime.Today.AddDays(4)
-    //    });
-    //}
+    private void NewWeightButton_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

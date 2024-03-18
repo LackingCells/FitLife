@@ -17,8 +17,8 @@ namespace FitLife.Logic.DB
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, dbName));
             //used for deleting db in debug, might add debug function later
-            //_connection.DeleteAllAsync<Weight>();
-            //_connection.DeleteAllAsync<Macro>();
+            _connection.DeleteAllAsync<Weight>();
+            _connection.DeleteAllAsync<Macro>();
 
 
             _connection.CreateTableAsync<Weight>();
@@ -29,8 +29,9 @@ namespace FitLife.Logic.DB
 
         public async Task<List<Weight>> GetWeekWeight(DateTime date) //ger en lista på vikter under vikten in-datumet ligger i baserat på dagen datum. funkar bara på dagens datum
         {
-            DateTime monday = date.AddDays(ConstantsDB.daysToMonday);
-            DateTime sunday = date.AddDays(ConstantsDB.daysToSunday);
+            //TODO: Gör att den funkar med valfritt datum genom att lösa daystomonday och sunday, använd dayofweek
+            DateTime monday = DateTime.Today.AddDays(ConstantsDB.daysToMonday);
+            DateTime sunday = DateTime.Today.AddDays(ConstantsDB.daysToSunday);
 
             Debug.WriteLine("getting this weeks weight");
             return await _connection.Table<Weight>()

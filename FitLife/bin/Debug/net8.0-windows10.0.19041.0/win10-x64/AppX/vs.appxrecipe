@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-18T13:58:20.947</Modified>
+      <Modified>2024-03-18T15:42:41.903</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-18T13:58:20.662</Modified>
+      <Modified>2024-03-18T15:41:36.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FitLife.runtimeconfig.json">
       <PackagePath>FitLife.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-18T13:32:36.638</Modified>
+      <Modified>2024-03-18T15:41:36.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FitLife.dll">
       <PackagePath>FitLife.dll</PackagePath>
-      <Modified>2024-03-18T13:58:20.246</Modified>
+      <Modified>2024-03-18T15:42:40.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FitLife.exe</PackagePath>
-      <Modified>2024-03-18T13:58:20.254</Modified>
+      <Modified>2024-03-18T15:42:40.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -312,7 +312,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\source\repos\FitLife\FitLife\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\FitLife.deps.json">
       <PackagePath>FitLife.deps.json</PackagePath>
-      <Modified>2024-03-18T13:32:36.606</Modified>
+      <Modified>2024-03-18T15:41:36.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -466,17 +466,21 @@
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
       <Modified>2024-02-05T21:21:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.licensing\24.2.9\lib\net8.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.licensing\25.1.35\lib\net8.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
-      <Modified>2024-03-04T08:05:26.000</Modified>
+      <Modified>2024-03-12T08:31:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.buttons\25.1.35\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Buttons.dll">
+      <PackagePath>Syncfusion.Maui.Buttons.dll</PackagePath>
+      <Modified>2024-03-11T20:48:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.charts\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Charts.dll">
       <PackagePath>Syncfusion.Maui.Charts.dll</PackagePath>
       <Modified>2024-03-04T07:50:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\25.1.35\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.dll">
       <PackagePath>Syncfusion.Maui.Core.dll</PackagePath>
-      <Modified>2024-03-04T07:48:56.000</Modified>
+      <Modified>2024-03-13T09:44:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -614,6 +618,10 @@
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
       <Modified>2024-02-13T17:10:50.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.buttons\25.1.35\lib\net8.0-windows10.0.19041.0\en-US\Syncfusion.Maui.Buttons.resources.dll">
+      <PackagePath>en-US\Syncfusion.Maui.Buttons.resources.dll</PackagePath>
+      <Modified>2024-03-11T20:48:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2023-05-31T20:12:36.000</Modified>
@@ -638,9 +646,9 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2024-02-13T17:00:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\24.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
+    <AppxPackagedFile Include="C:\Users\Elias\.nuget\packages\syncfusion.maui.core\25.1.35\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
       <PackagePath>Syncfusion.Maui.Core.pri</PackagePath>
-      <Modified>2024-03-04T07:48:56.000</Modified>
+      <Modified>2024-03-13T09:44:02.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

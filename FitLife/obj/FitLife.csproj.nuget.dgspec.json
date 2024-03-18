@@ -88,6 +88,10 @@
               "target": "Package",
               "version": "[2.1.8, )"
             },
+            "Syncfusion.Maui.Buttons": {
+              "target": "Package",
+              "version": "[25.1.35, )"
+            },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
               "version": "[24.2.9, )"
@@ -142,6 +146,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.8, )"
+            },
+            "Syncfusion.Maui.Buttons": {
+              "target": "Package",
+              "version": "[25.1.35, )"
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
@@ -198,6 +206,10 @@
               "target": "Package",
               "version": "[2.1.8, )"
             },
+            "Syncfusion.Maui.Buttons": {
+              "target": "Package",
+              "version": "[25.1.35, )"
+            },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
               "version": "[24.2.9, )"
@@ -247,6 +259,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.8, )"
+            },
+            "Syncfusion.Maui.Buttons": {
+              "target": "Package",
+              "version": "[25.1.35, )"
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",

@@ -3,6 +3,7 @@
     x:Class="FitLife.Pages.weightTrackingPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
     xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
     xmlns:model="clr-namespace:FitLife.Logic.ViewModels"
     Title="weightTrackingPage">
@@ -102,7 +103,13 @@
                 </chart:SfCartesianChart>
             </VerticalStackLayout>
         </Border>
-
-
+        <buttons:SfButton
+            Clicked="NewWeightButton_Clicked"
+            CornerRadius="50"
+            HeightRequest="100"
+            HorizontalOptions="End"
+            Text="Circle Button"
+            VerticalOptions="End"
+            WidthRequest="100" />
     </VerticalStackLayout>
 </ContentPage>

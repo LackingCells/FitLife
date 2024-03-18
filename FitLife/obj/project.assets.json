@@ -516,13 +516,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -541,10 +562,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -2870,13 +2891,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -2895,10 +2937,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -5224,13 +5266,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -5249,10 +5312,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -7578,13 +7641,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -7603,10 +7687,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -9932,13 +10016,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -9957,10 +10062,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -12286,13 +12391,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -12311,10 +12437,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -14640,13 +14766,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -14665,10 +14812,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -16994,13 +17141,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -17019,10 +17187,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Core.dll": {
@@ -19307,13 +19475,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -19332,10 +19521,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -19840,13 +20029,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -19865,10 +20075,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -20373,13 +20583,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -20398,10 +20629,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -20906,13 +21137,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -20931,10 +21183,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -21439,13 +21691,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -21464,10 +21737,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -21972,13 +22245,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -21997,10 +22291,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -22505,13 +22799,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -22530,10 +22845,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -23038,13 +23353,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -23063,10 +23399,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Core.dll": {
@@ -23669,13 +24005,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -23694,10 +24051,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -24209,13 +24566,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -24234,10 +24612,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -24749,13 +25127,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -24774,10 +25173,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -25289,13 +25688,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -25314,10 +25734,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -25829,13 +26249,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -25854,10 +26295,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -26366,13 +26807,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -26391,10 +26853,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -26906,13 +27368,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -26931,10 +27414,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -27443,13 +27926,34 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -27468,10 +27972,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Core.dll": {
@@ -28209,13 +28713,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -28234,10 +28759,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -28864,13 +29389,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -28889,10 +29435,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -29519,13 +30065,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -29544,10 +30111,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -30174,13 +30741,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -30199,10 +30787,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -30829,13 +31417,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -30854,10 +31463,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -31481,13 +32090,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -31506,10 +32136,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -32136,13 +32766,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -32161,10 +32812,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -32797,13 +33448,34 @@
           "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/24.2.9": {
+      "Syncfusion.Licensing/25.1.35": {
         "type": "package",
         "compile": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Maui.Buttons/25.1.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "25.1.35"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "resource": {
+          "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Syncfusion.Maui.Charts/24.2.9": {
@@ -32822,10 +33494,10 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/24.2.9": {
+      "Syncfusion.Maui.Core/25.1.35": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "24.2.9"
+          "Syncfusion.Licensing": "25.1.35"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll": {
@@ -35101,10 +35773,10 @@
         "sqlitepclraw.provider.sqlite3.nuspec"
       ]
     },
-    "Syncfusion.Licensing/24.2.9": {
-      "sha512": "dkXB1w0KoBGFp4quLawVL/URpqjsVETzFGsdixRhKY0Q/pEBhMpds+QYLzzzmpYvOlC6+rL5MLf7cc297bwtWw==",
+    "Syncfusion.Licensing/25.1.35": {
+      "sha512": "ZuMlu1xypHNxPM/UsPn1hEOOme30JgIQ9GzyF0yn/89mE6/g2ERkO+guhxnQXekEXTzVpYXkWnSshn1WV1l+rA==",
       "type": "package",
-      "path": "syncfusion.licensing/24.2.9",
+      "path": "syncfusion.licensing/25.1.35",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -35115,15 +35787,63 @@
         "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
         "lib/net40/Syncfusion.Licensing.dll",
         "lib/net45/Syncfusion.Licensing.dll",
-        "lib/net451/Syncfusion.Licensing.dll",
-        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net462/Syncfusion.Licensing.dll",
         "lib/net6.0/Syncfusion.Licensing.dll",
         "lib/net7.0/Syncfusion.Licensing.dll",
         "lib/net8.0/Syncfusion.Licensing.dll",
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.24.2.9.nupkg.sha512",
+        "syncfusion.licensing.25.1.35.nupkg.sha512",
         "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.Buttons/25.1.35": {
+      "sha512": "4dga7pNuNcDFvRgoJQcu3ExuCsysqrBv76qOFaJJRT2TgScITz29w0dOec7UCXG5g8P8Pq/AdcPt1kkORS2vbg==",
+      "type": "package",
+      "path": "syncfusion.maui.buttons/25.1.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Buttons.aar",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Buttons.dll",
+        "lib/net7.0-android33.0/Syncfusion.Maui.Buttons.xml",
+        "lib/net7.0-android33.0/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net7.0-ios16.1/Syncfusion.Maui.Buttons.dll",
+        "lib/net7.0-ios16.1/Syncfusion.Maui.Buttons.xml",
+        "lib/net7.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net7.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll",
+        "lib/net7.0-maccatalyst16.1/Syncfusion.Maui.Buttons.xml",
+        "lib/net7.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.deps.json",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.xml",
+        "lib/net7.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net7.0/Syncfusion.Maui.Buttons.deps.json",
+        "lib/net7.0/Syncfusion.Maui.Buttons.dll",
+        "lib/net7.0/Syncfusion.Maui.Buttons.xml",
+        "lib/net7.0/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.dll",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Buttons.xml",
+        "lib/net8.0-android34.0/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.dll",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Buttons.xml",
+        "lib/net8.0-ios16.1/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.dll",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Buttons.xml",
+        "lib/net8.0-maccatalyst16.1/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.deps.json",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.dll",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Buttons.xml",
+        "lib/net8.0-windows10.0.19041.0/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "lib/net8.0/Syncfusion.Maui.Buttons.deps.json",
+        "lib/net8.0/Syncfusion.Maui.Buttons.dll",
+        "lib/net8.0/Syncfusion.Maui.Buttons.xml",
+        "lib/net8.0/en-US/Syncfusion.Maui.Buttons.resources.dll",
+        "syncfusion.maui.buttons.25.1.35.nupkg.sha512",
+        "syncfusion.maui.buttons.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -35166,10 +35886,10 @@
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Core/24.2.9": {
-      "sha512": "w9witZGfN0Tw6qszweltY3V4pVI97Hl85BppkLRLG+JAIM5ZzQ5k2gQuOrxKLiAKHOdj5JiJSChY6WS7YOu6Zw==",
+    "Syncfusion.Maui.Core/25.1.35": {
+      "sha512": "cuMwwyy3mhBC4SdKbiCZcDggu1Fd+NFFwleB1rEvAD74CuyMiPazOktcUD+RtQVR42jMfMQYHTHxIwwh/y6F/g==",
       "type": "package",
-      "path": "syncfusion.maui.core/24.2.9",
+      "path": "syncfusion.maui.core/25.1.35",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -35186,10 +35906,12 @@
         "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll",
         "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.pri",
         "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core.xml",
-        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xaml",
-        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xbf",
-        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xaml",
-        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xbf",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/CarouselStyles.xaml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/CarouselStyles.xbf",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/Resources.xaml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/Resources.xbf",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/RotatorStyles.xaml",
+        "lib/net7.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/RotatorStyles.xbf",
         "lib/net7.0/Syncfusion.Maui.Core.deps.json",
         "lib/net7.0/Syncfusion.Maui.Core.dll",
         "lib/net7.0/Syncfusion.Maui.Core.xml",
@@ -35203,14 +35925,16 @@
         "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.dll",
         "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.pri",
         "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core.xml",
-        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xaml",
-        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/CarouselStyles.xbf",
-        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xaml",
-        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Carousel/Platform/Windows/Resources.xbf",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/CarouselStyles.xaml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/CarouselStyles.xbf",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/Resources.xaml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/Resources.xbf",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/RotatorStyles.xaml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Core/Platform/Windows/Styles/RotatorStyles.xbf",
         "lib/net8.0/Syncfusion.Maui.Core.deps.json",
         "lib/net8.0/Syncfusion.Maui.Core.dll",
         "lib/net8.0/Syncfusion.Maui.Core.xml",
-        "syncfusion.maui.core.24.2.9.nupkg.sha512",
+        "syncfusion.maui.core.25.1.35.nupkg.sha512",
         "syncfusion.maui.core.nuspec",
         "syncfusion_logo.png"
       ]
@@ -37348,6 +38072,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "SQLitePCLRaw.bundle_green >= 2.1.8",
+      "Syncfusion.Maui.Buttons >= 25.1.35",
       "Syncfusion.Maui.Charts >= 24.2.9",
       "sqlite-net-pcl >= 1.8.116"
     ],
@@ -37357,6 +38082,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "SQLitePCLRaw.bundle_green >= 2.1.8",
+      "Syncfusion.Maui.Buttons >= 25.1.35",
       "Syncfusion.Maui.Charts >= 24.2.9",
       "sqlite-net-pcl >= 1.8.116"
     ],
@@ -37366,6 +38092,7 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "Microsoft.NET.ILLink.Tasks >= 8.0.3",
       "SQLitePCLRaw.bundle_green >= 2.1.8",
+      "Syncfusion.Maui.Buttons >= 25.1.35",
       "Syncfusion.Maui.Charts >= 24.2.9",
       "sqlite-net-pcl >= 1.8.116"
     ],
@@ -37374,6 +38101,7 @@
       "Microsoft.Maui.Controls >= 8.0.7",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
       "SQLitePCLRaw.bundle_green >= 2.1.8",
+      "Syncfusion.Maui.Buttons >= 25.1.35",
       "Syncfusion.Maui.Charts >= 24.2.9",
       "sqlite-net-pcl >= 1.8.116"
     ]
@@ -37466,6 +38194,10 @@
             "target": "Package",
             "version": "[2.1.8, )"
           },
+          "Syncfusion.Maui.Buttons": {
+            "target": "Package",
+            "version": "[25.1.35, )"
+          },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
             "version": "[24.2.9, )"
@@ -37520,6 +38252,10 @@
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
             "version": "[2.1.8, )"
+          },
+          "Syncfusion.Maui.Buttons": {
+            "target": "Package",
+            "version": "[25.1.35, )"
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
@@ -37576,6 +38312,10 @@
             "target": "Package",
             "version": "[2.1.8, )"
           },
+          "Syncfusion.Maui.Buttons": {
+            "target": "Package",
+            "version": "[25.1.35, )"
+          },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
             "version": "[24.2.9, )"
@@ -37625,6 +38365,10 @@
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
             "version": "[2.1.8, )"
+          },
+          "Syncfusion.Maui.Buttons": {
+            "target": "Package",
+            "version": "[25.1.35, )"
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",

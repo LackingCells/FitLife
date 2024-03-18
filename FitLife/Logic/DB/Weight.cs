@@ -8,7 +8,7 @@ namespace FitLife.Logic.DB
         [PrimaryKey, AutoIncrement, Column("id")]
         public int Id { get; set; }
         [Column("date"), Unique]
-        public DateTime Date { get; set; } //den klarar inte dateonly-formatet, hitta alternativ.
+        public DateTime Date { get; set; }
         [Column("weight")]
         public float DailyWeight { get; set; }
     }

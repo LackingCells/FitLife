@@ -4,7 +4,7 @@
     {
         public App()
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzE1NjgxM0AzMjM0MmUzMDJlMzBvYy9KdlpmVXF3ODFocnNXcmUremxtTWF1bTNEbDkzL0ZvNkk3T1NWVVpZPQ==");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NBaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXxfeHVUQmFYWUxwXEA=");
             InitializeComponent();
 
             MainPage = new AppShell();
