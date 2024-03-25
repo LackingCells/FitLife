@@ -23,12 +23,12 @@ public partial class weightTrackingPage : ContentPage
 
     private async void InitializeAsyncs()
     {
-        await setWeekWeight(DateTime.Today);
+        weightList = await getWeekWeight(DateTime.Today);
+        weightChange.Text = "Weight change: " + (getWeightAverageOf(await getWeekWeight(DateTime.Today)) - getWeightAverageOf(await getWeekWeight(DateTime.Today.AddDays(-7)))) + " kg";
 
         MainThread.BeginInvokeOnMainThread(async () =>
         {
             currentWeight.Text = getWeightAverageOf(weightList) + " kg";
-            Debug.WriteLine(getWeightAverageOf(weightList));
             chart = BindingContext as VMWeightChart;
         });
     }
@@ -42,7 +42,6 @@ public partial class weightTrackingPage : ContentPage
         foreach (Weight weight in weeklyWeight)
         {
             sum += weight.DailyWeight;
-            Debug.WriteLine(weight.Date);
         }
         float avg = sum / weeklyWeight.Count;
 
@@ -54,19 +53,21 @@ public partial class weightTrackingPage : ContentPage
         chart.UpdateMacroChart(macroList);
     }
 
-    private async Task setWeekWeight(DateTime date)
+    private async Task<List<Weight>> getWeekWeight(DateTime date)
     {
-        DateTime monday = getThisMonday(DateTime.Today);
+        DateTime monday = getThisMonday(date);
+        List<Weight> output = new List<Weight>();
         Weight weight = new Weight();
 
         for (int i = 0; i < 7; i++)
         {
-            weight = await _dbService.getWeight(DateTime.Today.AddDays(i));
+            weight = await _dbService.getWeight(monday.AddDays(i));
             if (weight != null)
             {
-                weightList.Add(weight);
+                output.Add(weight);
             }
         }
+        return output;
     }
     private DateTime getThisMonday(DateTime date)
     {
