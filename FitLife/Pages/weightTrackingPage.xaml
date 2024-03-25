@@ -35,7 +35,7 @@
             <Border Grid.Column="0" HorizontalOptions="End">
                 <VerticalStackLayout>
                     <Label Text="Enter todays weight:" />
-                    <Entry x:Name="weightKg" HorizontalOptions="CenterAndExpand" />
+                    <Entry x:Name="weightKg" HorizontalOptions="CenterAndExpand" Keyboard="Numeric"/>
                     <Button Clicked="WeightButton_Clicked" Text="Confirm" />
                 </VerticalStackLayout>
             </Border>
@@ -43,8 +43,8 @@
                 <VerticalStackLayout>
                     <Label Text="Add calories and protein:" />
                     <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                        <Entry x:Name="Kcal" Placeholder="Calories" />
-                        <Entry x:Name="Protein" Placeholder="Protein" />
+                        <Entry x:Name="Kcal" Placeholder="Calories" Keyboard="Numeric" />
+                        <Entry x:Name="Protein" Placeholder="Protein" Keyboard="Numeric"/>
                     </HorizontalStackLayout>
                     <Button Clicked="KcalProteinButton_Clicked" Text="Add" />
                 </VerticalStackLayout>

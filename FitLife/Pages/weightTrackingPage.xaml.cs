@@ -2,6 +2,7 @@ using FitLife.Logic.DB;
 using FitLife.Logic.ViewModels;
 using System.Diagnostics;
 using System.Runtime.Intrinsics.X86;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace FitLife.Pages;
 
@@ -22,16 +23,17 @@ public partial class weightTrackingPage : ContentPage
 
     private async void InitializeAsyncs()
     {
-        weightList = await _dbService.GetWeekWeight(DateTime.Today);
-        macroList = await _dbService.GetWeekMacro(DateTime.Today);
+        await setWeekWeight(DateTime.Today);
 
-        MainThread.BeginInvokeOnMainThread(() =>
+        MainThread.BeginInvokeOnMainThread(async () =>
         {
             currentWeight.Text = getWeightAverageOf(weightList) + " kg";
             Debug.WriteLine(getWeightAverageOf(weightList));
             chart = BindingContext as VMWeightChart;
         });
     }
+
+    
 
     //METHODS
     private float getWeightAverageOf(List<Weight> weeklyWeight)
@@ -46,10 +48,48 @@ public partial class weightTrackingPage : ContentPage
 
         return avg;
     }
-    public void UpdateLists()
+    private void UpdateLists()
     {
         chart.UpdateWeightChart(weightList);
         chart.UpdateMacroChart(macroList);
+    }
+
+    private async Task setWeekWeight(DateTime date)
+    {
+        DateTime monday = getThisMonday(DateTime.Today);
+        Weight weight = new Weight();
+
+        for (int i = 0; i < 7; i++)
+        {
+            weight = await _dbService.getWeight(DateTime.Today.AddDays(i));
+            if (weight != null)
+            {
+                weightList.Add(weight);
+            }
+        }
+    }
+    private DateTime getThisMonday(DateTime date)
+    {
+        switch (date.DayOfWeek)
+        {
+            case DayOfWeek.Monday:
+                return date;
+            case DayOfWeek.Tuesday:
+                return date.AddDays(-1);
+            case DayOfWeek.Wednesday:
+                return date.AddDays(-2);
+            case DayOfWeek.Thursday:
+                return date.AddDays(-3);
+            case DayOfWeek.Friday:
+                return date.AddDays(-4);
+            case DayOfWeek.Saturday:
+                return date.AddDays(-5);
+            case DayOfWeek.Sunday:
+                return date.AddDays(-6);
+            default:
+                break;
+        }
+        return date;
     }
 
 
@@ -101,8 +141,7 @@ public partial class weightTrackingPage : ContentPage
         }
     }
 
-    private void NewWeightButton_Clicked(object sender, EventArgs e)
+    private async void NewWeightButton_Clicked(object sender, EventArgs e)
     {
-
     }
 }

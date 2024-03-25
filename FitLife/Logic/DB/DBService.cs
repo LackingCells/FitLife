@@ -16,28 +16,13 @@ namespace FitLife.Logic.DB
         public DBService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, dbName));
-            //used for deleting db in debug, might add debug function later
-            _connection.DeleteAllAsync<Weight>();
-            _connection.DeleteAllAsync<Macro>();
-
-
             _connection.CreateTableAsync<Weight>();
             _connection.CreateTableAsync<Macro>();
         }
 
-        //FOR WEIGHT:
-
-        public async Task<List<Weight>> GetWeekWeight(DateTime date) //ger en lista på vikter under vikten in-datumet ligger i baserat på dagen datum. funkar bara på dagens datum
+        public async Task<Weight> getWeight(DateTime date)
         {
-            //TODO: Gör att den funkar med valfritt datum genom att lösa daystomonday och sunday, använd dayofweek
-            DateTime monday = DateTime.Today.AddDays(ConstantsDB.daysToMonday);
-            DateTime sunday = DateTime.Today.AddDays(ConstantsDB.daysToSunday);
-
-            Debug.WriteLine("getting this weeks weight");
-            return await _connection.Table<Weight>()
-                                .Where(d => d.Date >= monday && d.Date <= sunday) //ngt fel i denna, tar alla vikter all time
-                                .OrderBy(d => d.Date)
-                                .ToListAsync();
+            return await _connection.Table<Weight>().Where(d => d.Date == date).FirstOrDefaultAsync();
         }
 
         public async Task<List<Weight>> GetAllTimeWeight()
@@ -94,17 +79,26 @@ namespace FitLife.Logic.DB
             await page.DisplayAlert("Macros updated", display, "OK");
         }
 
-        public async Task<List<Macro>> GetWeekMacro(DateTime date) //funkar bara på dagens datum
-        {
-            DateTime monday = DateTime.Today.AddDays(ConstantsDB.daysToMonday);
-            DateTime sunday = DateTime.Today.AddDays(ConstantsDB.daysToSunday);
+        //FLYTTA TILL WEIGHTPAGE
+        //public async Task<List<Macro>> GetWeekMacro(DateTime date) 
+        //{
+        //    DateTime monday = getThisMonday(date);
+        //    List<Macro> output = new List<Macro>();
 
-            Debug.WriteLine("getting this weeks macros");
-            return await _connection.Table<Macro>()
-                                .Where(d => d.Date >= monday && d.Date <= sunday)
-                                .OrderBy(d => d.Date)
-                                .ToListAsync();
-        }
+        //    for (int i = 0; i < 7; i++)
+        //    {
+        //        output.Add(await _connection.Table<Macro>().Where(d => d.Date == monday.AddDays(i)).FirstOrDefaultAsync());
+        //    }
+
+        //    return output;
+        //    Debug.WriteLine("getting this weeks macros");
+
+        //    //Funkar inte
+        //    //return await _connection.Table<Macro>()
+        //    //                    .Where(d => d.Date >= monday && d.Date <= sunday)
+        //    //                    .OrderBy(d => d.Date)
+        //    //                    .ToListAsync();
+        //}
 
         public async Task<List<Macro>> GetAllTimeMacro()
         {
