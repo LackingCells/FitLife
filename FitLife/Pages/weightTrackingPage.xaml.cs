@@ -11,6 +11,7 @@ public partial class weightTrackingPage : ContentPage
 {
     private readonly DBService _dbService;
     private List<Weight> weightList = new List<Weight>();
+    private List<Weight> weekWeightList = new List<Weight>();
     private List<Macro> macroList = new List<Macro>();
     private VMWeightChart chart;
 
@@ -23,13 +24,15 @@ public partial class weightTrackingPage : ContentPage
 
     private async void InitializeAsyncs()
     {
-        weightList = await getWeekWeight(DateTime.Today);
-        weightChange.Text = "Weight change: " + (getWeightAverageOf(await getWeekWeight(DateTime.Today)) - getWeightAverageOf(await getWeekWeight(DateTime.Today.AddDays(-7)))) + " kg";
+        currentWeight.Text = getWeightAverageOf(await getWeekWeight(DateTime.Today)) + "kg";
+        weightList = await _dbService.GetWeightSince(DateTime.Today.AddDays(-30));
+        weekWeightChange.Text = (getWeightAverageOf(await getWeekWeight(DateTime.Today)) - getWeightAverageOf(await getWeekWeight(DateTime.Today.AddDays(-7)))) + "kg";
+        monthWeightChange.Text = (getWeightAverageOf(await getWeekWeight(DateTime.Today)) - getWeightAverageOf(await getWeekWeight(DateTime.Today.AddDays(-30)))) + "kg";
 
         MainThread.BeginInvokeOnMainThread(async () =>
         {
-            currentWeight.Text = getWeightAverageOf(weightList) + " kg";
             chart = BindingContext as VMWeightChart;
+            UpdateLists();
         });
     }
 
@@ -45,7 +48,7 @@ public partial class weightTrackingPage : ContentPage
         }
         float avg = sum / weeklyWeight.Count;
 
-        return avg;
+        return ((float)Math.Round(avg, 1));
     }
     private void UpdateLists()
     {
@@ -104,45 +107,65 @@ public partial class weightTrackingPage : ContentPage
         currentWeight.Text = getWeightAverageOf(weightList) + " kg";
     }
 
-    private async void WeightButton_Clicked(object sender, EventArgs e)
-    {
-        if (weightKg.Text != null)
-        {
-            await _dbService.CreateWeight(new Weight
-            {
-                DailyWeight = float.Parse(weightKg.Text),
-                Date = DateTime.Today
-            }, this);
-            weightKg.Text = "weight entered";
-        }
+    //private async void WeightButton_Clicked(object sender, EventArgs e)
+    //{
+    //    if (weightKg.Text != null)
+    //    {
+    //        await _dbService.CreateWeight(new Weight
+    //        {
+    //            DailyWeight = float.Parse(weightKg.Text),
+    //            Date = DateTime.Today
+    //        }, this);
+    //        weightKg.Text = "weight entered";
+    //    }
 
-    }
+    //}
 
-    private async void KcalProteinButton_Clicked(object sender, EventArgs e)
-    {
-        if (Kcal.Text != null || Protein.Text != null)
-        {
-            if (Kcal.Text == null)
-            {
-                Kcal.Text = "0";
-            }
-            if (Protein.Text == null)
-            {
-                Protein.Text = "0";
-            }
+    //private async void KcalProteinButton_Clicked(object sender, EventArgs e)
+    //{
+    //    if (Kcal.Text != null || Protein.Text != null)
+    //    {
+    //        if (Kcal.Text == null)
+    //        {
+    //            Kcal.Text = "0";
+    //        }
+    //        if (Protein.Text == null)
+    //        {
+    //            Protein.Text = "0";
+    //        }
 
-            await _dbService.CreateMacro(new Macro
-            {
-                Kcal = int.Parse(Kcal.Text),
-                Protein = int.Parse(Protein.Text),
-                Date = DateTime.Today
-            }, this);
-            Kcal.Text = null;
-            Protein.Text = null;
-        }
-    }
+    //        await _dbService.CreateMacro(new Macro
+    //        {
+    //            Kcal = int.Parse(Kcal.Text),
+    //            Protein = int.Parse(Protein.Text),
+    //            Date = DateTime.Today
+    //        }, this);
+    //        Kcal.Text = null;
+    //        Protein.Text = null;
+    //    }
+    //}
 
     private async void NewWeightButton_Clicked(object sender, EventArgs e)
     {
+    }
+
+    private async void Switch_Toggled(object sender, ToggledEventArgs e)
+    {
+        if (chartSwitch.IsToggled)
+        {
+            sinceStart.Opacity = 1;
+            lastMonth.Opacity = 0.5;
+            header.Text = "Progress since start";
+            weightList = await _dbService.GetAllTimeWeight();
+            UpdateLists();
+        }
+        else
+        {
+            sinceStart.Opacity = 0.5;
+            lastMonth.Opacity = 1;
+            header.Text = "Progress last month";
+            weightList = await _dbService.GetWeightSince(DateTime.Today.AddDays(-30));
+            UpdateLists();
+        }
     }
 }

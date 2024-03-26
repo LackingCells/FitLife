@@ -11,18 +11,109 @@
     <ContentPage.BindingContext>
         <model:VMWeightChart />
     </ContentPage.BindingContext>
-    <!--
-        1. Current weight i kilo, tar genomsnittet den senaste veckan
-        2. Insert daily weight
-        Vanlig insert som lägger in vikten i lokal databas
-        3. checkbox för daglig reminder
-        Standard-tid den kommer och tid efter alarm
-    -->
 
 
-    <!--  Tweaka storlekar och placement på saker för att passa mobil  -->
+    <!--  TODO: anpassa för mobil, sidan i sig är klar  -->
     <VerticalStackLayout>
-        <Label HorizontalOptions="Center" Text="Current weight:" />
+        <!--  Start and overview chart  -->
+        <Label
+            x:Name="header"
+            HorizontalOptions="Center"
+            Text="Progress last month" />
+        <chart:SfCartesianChart x:Name="SFChart" HeightRequest="300">
+            <chart:SfCartesianChart.Title>
+                <Label HorizontalOptions="Center" />
+            </chart:SfCartesianChart.Title>
+            <chart:SfCartesianChart.XAxes>
+                <chart:CategoryAxis ShowMajorGridLines="False">
+                    <chart:CategoryAxis.Title>
+                        <chart:ChartAxisTitle Text="Date" />
+                    </chart:CategoryAxis.Title>
+                </chart:CategoryAxis>
+            </chart:SfCartesianChart.XAxes>
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis ShowMinorGridLines="False">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="Value" />
+                    </chart:NumericalAxis.Title>
+                </chart:NumericalAxis>
+            </chart:SfCartesianChart.YAxes>
+            <chart:SfCartesianChart.Legend>
+                <chart:ChartLegend ToggleSeriesVisibility="True" />
+            </chart:SfCartesianChart.Legend>
+            <chart:FastLineSeries
+                EnableAntiAliasing="True"
+                ItemsSource="{Binding Weight}"
+                Label="Weight"
+                XBindingPath="Date"
+                YBindingPath="DailyWeight" />
+            <chart:FastLineSeries
+                EnableAntiAliasing="True"
+                IsVisible="False"
+                ItemsSource="{Binding Macro}"
+                Label="Calories"
+                XBindingPath="Date"
+                YBindingPath="Calories" />
+            <chart:FastLineSeries
+                EnableAntiAliasing="True"
+                IsVisible="False"
+                ItemsSource="{Binding Macro}"
+                Label="Protein"
+                XBindingPath="Date"
+                YBindingPath="Protein" />
+        </chart:SfCartesianChart>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+            <Label x:Name="lastMonth" Text="Last month" />
+            <Switch x:Name="chartSwitch" Toggled="Switch_Toggled" />
+            <Label
+                x:Name="sinceStart"
+                Opacity="0.5"
+                Text="Since start" />
+        </HorizontalStackLayout>
+
+        <!--  Trends overview  -->
+        <Label HorizontalOptions="Start" Text="Trends" />
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*">
+            <Border Grid.Row="0" Grid.Column="0">
+                <VerticalStackLayout>
+                    <Label Text="Current weight" />
+                    <Label x:Name="currentWeight" />
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="1">
+                <VerticalStackLayout>
+                    <Label Text="Since last week" />
+                    <Label x:Name="weekWeightChange" />
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0">
+                <VerticalStackLayout>
+                    <Label Text="Average calories and protein" />
+                    <Label x:Name="avgKcal" />
+                    <Label x:Name="avgProtein" />
+                </VerticalStackLayout>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1">
+                <VerticalStackLayout>
+                    <Label Text="Since last month" />
+                    <Label x:Name="monthWeightChange" />
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+
+        <!--  History last week day to day with possibility to view more  -->
+        <HorizontalStackLayout>
+            <Label Text="History from" />
+            <DatePicker x:Name="historyFromDate" />
+        </HorizontalStackLayout>
+        <ScrollView>
+            <ListView x:Name="history" />
+        </ScrollView>
+
+
+
+
+        <!--<Label HorizontalOptions="Center" Text="Current weight:" />
         <Border HeightRequest="50" WidthRequest="130">
             <Label
                 x:Name="currentWeight"
@@ -30,7 +121,9 @@
                 VerticalOptions="Center" />
         </Border>
 
+        -->
         <!--  Kolla hur input funkar mobilt, behövs det en enter knapp eller e det inbyggt?  -->
+        <!--
         <Grid ColumnDefinitions="*,*,*" RowDefinitions="*">
             <Border Grid.Column="0" HorizontalOptions="End">
                 <VerticalStackLayout>
@@ -74,48 +167,7 @@
                     <Button Text="Last month" />
                 </HorizontalStackLayout>
 
-                <chart:SfCartesianChart x:Name="SFChart" HeightRequest="300">
-                    <chart:SfCartesianChart.Title>
-                        <Label HorizontalOptions="Center" />
-                    </chart:SfCartesianChart.Title>
-                    <chart:SfCartesianChart.XAxes>
-                        <chart:CategoryAxis ShowMajorGridLines="False">
-                            <chart:CategoryAxis.Title>
-                                <chart:ChartAxisTitle Text="Date" />
-                            </chart:CategoryAxis.Title>
-                        </chart:CategoryAxis>
-                    </chart:SfCartesianChart.XAxes>
-                    <chart:SfCartesianChart.YAxes>
-                        <chart:NumericalAxis ShowMinorGridLines="False">
-                            <chart:NumericalAxis.Title>
-                                <chart:ChartAxisTitle Text="Value" />
-                            </chart:NumericalAxis.Title>
-                        </chart:NumericalAxis>
-                    </chart:SfCartesianChart.YAxes>
-                    <chart:SfCartesianChart.Legend>
-                        <chart:ChartLegend ToggleSeriesVisibility="True" />
-                    </chart:SfCartesianChart.Legend>
-                    <chart:FastLineSeries
-                        EnableAntiAliasing="True"
-                        ItemsSource="{Binding Weight}"
-                        Label="Weight"
-                        XBindingPath="Date"
-                        YBindingPath="DailyWeight" />
-                    <chart:FastLineSeries
-                        EnableAntiAliasing="True"
-                        IsVisible="False"
-                        ItemsSource="{Binding Macro}"
-                        Label="Calories"
-                        XBindingPath="Date"
-                        YBindingPath="Calories" />
-                    <chart:FastLineSeries
-                        EnableAntiAliasing="True"
-                        IsVisible="False"
-                        ItemsSource="{Binding Macro}"
-                        Label="Protein"
-                        XBindingPath="Date"
-                        YBindingPath="Protein" />
-                </chart:SfCartesianChart>
+
             </VerticalStackLayout>
         </Border>
         <buttons:SfButton
@@ -125,6 +177,6 @@
             HorizontalOptions="End"
             Text="Circle Button"
             VerticalOptions="End"
-            WidthRequest="100" />
+            WidthRequest="100" />-->
     </VerticalStackLayout>
 </ContentPage>

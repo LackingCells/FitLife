@@ -30,6 +30,11 @@ namespace FitLife.Logic.DB
             return await _connection.Table<Weight>().OrderBy(d => d.Date).ToListAsync();
         }
 
+        public async Task<List<Weight>> GetWeightSince(DateTime date)
+        {
+            return await _connection.Table<Weight>().Where(d => d.Date > date).OrderBy(d => d.Date).ToListAsync();
+        }
+
         public async Task CreateWeight(Weight newWeight, Page page)
         {
             Weight oldWeight = await _connection.Table<Weight>()
